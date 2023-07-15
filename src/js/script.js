@@ -36,3 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
      marqueeContent.textContent = repeatedText;
      marqueeContent.setAttribute("data-content", repeatedText);
  }
+ 
+ window.onload = function() {
+    var closeButton = document.getElementById('closeBanner');
+    closeButton.onclick = function() {
+        var banner = document.getElementById('banner');
+        banner.style.display = 'none';
+    }
+}

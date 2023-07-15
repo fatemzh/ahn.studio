@@ -3,11 +3,28 @@
 }
 
 body{
-
     background-color: #FBC0AE;
     font-family:'Gloock', sans-serif;
     margin: 0;
 }
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+}
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW NAV BAR  WWWWWWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
 
 header{
     display: flex;
@@ -16,11 +33,38 @@ header{
     padding: 50px 100px;
 }
 
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    color:  rgba(255, 255, 255);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    font-size: 15px;
+}
+
+.close-button {
+    font-size: 10px;
+    color:  rgba(255, 255, 255);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
 #header-left-part, #header-right-part{
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 20px;
+    margin-top: 50px;
 }
 
 #header-left-part nav ul{
@@ -51,6 +95,125 @@ header{
     color: white;
 }
 
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW NAV BAR WWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+#nav-products{
+    margin: 30px auto;
+    width: 900px;
+}
+
+#nav-products ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#nav-products ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#nav-products ul li p{
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: bolder;
+}
+
+#nav-products ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px auto;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#nav-products ul li a:hover{
+    text-decoration: underline;
+}
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW PRODUCTS GRID WWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+#products-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+}
+
+.product-card .image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s;
+}
+
+.product-card img.hover {
+    opacity: 0;
+}
+
+.image-container:hover img.hover {
+    opacity: 1;
+}
+
+.image-container{
+    height: 70%;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    align-self:flex-end;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.product-description{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    margin: 0;
+    padding: 0;
+}
+
+.product-description h2{
+    font-size: 27px;
+    margin: 15px 0;
+    padding: 0;
+}
+
+.product-description p{
+    color:#ff9270;
+    margin: 0;
+}
+
+.product-description h3{
+    display: flex;
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(255, 57, 57, 0.6);
+}
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW FOOTER WWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
 footer{
     display: flex;
     flex-direction: column;
@@ -66,10 +229,14 @@ footer h3{
 footer ul{
     list-style: none;
     font-size: 20px;
+    padding: 0;
+}
+
+footer ul li{
+    margin: 20px 0px;
 }
 
 footer ul li a{
-    padding: 5px;
     text-decoration: underline;
     color: white;
 }

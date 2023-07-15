@@ -11,6 +11,10 @@
     <title>ahn.studio</title>
 </head>
 <body>
+    <div id="banner" class="banner">
+        <p>free shipping for U.S. orders over $100 | Worldwide over $160</p>
+        <button id="closeBanner" class="close-button">x</button>
+    </div>
     <header>
         <div id="header-left-part">
             <a href="../../src/html/index.html">
@@ -38,9 +42,9 @@
 
     <div class="carousel-container">
         <div class="carousel-slide" id="carousel">
-            <img src="../../resources/images/accueil/carousel.jpg" alt="">
-            <img src="../../resources/images/accueil/carousel2.jpg" alt="">
-            <img src="../../resources/images/accueil/carousel3.jpg" alt="">
+            <img src="../../resources/images/accueil/carousel.jpg" alt="porte-clés d'oursons">
+            <img src="../../resources/images/accueil/carousel2.jpg" alt="washing tape et papeteries avec des illustrations d'oursons">
+            <img src="../../resources/images/accueil/carousel3.jpg" alt="bagues multicolores faites avec des perles">
         </div>
         <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
         <a class="next" onclick="changeSlide(1)">&#10095;</a>
@@ -48,26 +52,36 @@
 
     <div id="categories-product">
         <div class="card-product">
-            <img src="../../resources/images/accueil/miniature-stickers.jpg" alt="Photo de stickers">
+            <a href="../../src/html/shop.html">
+                <img src="../../resources/images/accueil/miniature-stickers.jpg" alt="Photo de stickers">
+            </a>
             <p>stickers</p>
         </div>
         <div class="card-product">
-            <img src="../../resources/images/accueil/miniature-stationery.jpg" alt="Photo de rouleau de washing tape">
+            <a href="../../src/html/shop.html">
+                <img src="../../resources/images/accueil/miniature-stationery.jpg" alt="Photo de rouleau de washing tape">
+            </a>
             <p>stationery</p>
         </div>
         <div class="card-product">
-            <img src="../../resources/images/accueil/dishware.jpg" alt="Photo d'accessoire pour téléphone">
+            <a href="../../src/html/shop.html">
+                <img src="../../resources/images/accueil/dishware.jpg" alt="Photo d'une tasse transparente avec un ourson rouge dessus">
+            </a>
             <p>home</p>
         </div>
         <div class="card-product">
-            <img src="../../resources/images/accueil/scrunchie (2).jpg" alt="Photo de bagues en perles">
+            <a href="../../src/html/shop.html">
+                <img src="../../resources/images/accueil/scrunchie(2).jpg" alt="Photo d'un scrunchie pour cheveux motif vichy vert">
+            </a>
             <p>accessories</p>
         </div>
     </div>
 
     <div id="collect-book">
         <div id="img-book">
-            <img src="../../resources/images/accueil/collectbook.jpg" alt="">
+            <a href="../../src/html/shop.html">
+                <img src="../../resources/images/accueil/collectbook.jpg" alt="photo d'un petit livret motif vichy bleu pastel, contenant une photo">
+            </a>
         </div>
         <div id="description">
             <p>cherish precious memories, or display your dedicated collections in our all new mini photo albums. the perfect  size for mini polaroids and k-pop photo cards.</p>
@@ -83,9 +97,15 @@
     <div id="scrunchies">
         <h2>new scrunchies.</h2>
         <div id="scrunchies-line">
-            <img src="../../resources/images/accueil/scrunchie.jpg" alt="">
-            <img src="../../resources/images/accueil/scrunchie (2).jpg" alt="">
-            <img src="../../resources/images/accueil/scrunchie (3).jpg" alt="">
+            <a href="../../src/html/shop.html">
+                <img src="../../resources/images/accueil/scrunchie.jpg" alt="photo d'un scrunchie beige">
+            </a>
+            <a href="../../src/html/shop.html">
+                <img src="../../resources/images/accueil/scrunchie(2).jpg" alt="photo d'un scrunchie motif vichy vert pastel">
+            </a>
+            <a href="../../src/html/shop.html">
+                <img src="../../resources/images/accueil/scrunchie(3).jpg" alt="photo d'un scrunchie rose pastel satiné">
+            </a>
         </div>
         <a href="../../src/html/shop.html" class="shop-button">shop now</a>
     </div>
@@ -97,31 +117,51 @@
             <p>the perfect edition to a cozy morning coffee, mid-day snack, or quiet evening of cooking. these multi-purpose cereal cups can be used for drinks, yogurt parfaits, whisking eggs and so much more.</p>
             <a href="../../src/html/shop.html" class="shop-button">shop now</a>
         </div>
-        <img src="../../resources/images/accueil/dishware.jpg" alt="">
+        <a href="../../src/html/shop.html" id="img-dishware">
+            <img src="../../resources/images/accueil/dishware.jpg" alt="">
+        </a>
+    </div>
+
+    <div id="phone-grips">
+        <h2>new phone grips.</h2>
+        <div id="pg-row">
+            <div class="grip">
+                <a href="../../src/html/shop.html">
+                    <img src="../../resources/images/accueil/pg.jpg" alt="">
+                    <h3>'take care' cake</h3>
+                </a>
+            </div>
+            <div class="grip">
+                <a href="../../src/html/shop.html">
+                    <img src="../../resources/images/accueil/pg-cake.jpg" alt="">
+                    <h3>teddy toast</h3>
+                </a>
+            </div>
+        </div>
     </div>
     <h2>tag us @ahn.studio</h2>
 
     <div id="insta-grid">
-        <img src="../../resources/images/accueil/insta grid/dc10-0.jpg" alt="">
-        <img src="../../resources/images/accueil/insta grid/dcs-0.jpg" alt="">
-        <img src="../../resources/images/accueil/insta grid/image-asset (1).jpeg" alt="">
-        <img src="../../resources/images/accueil/insta grid/image-asset (2).jpeg" alt="">
-        <img src="../../resources/images/accueil/insta grid/image-asset (3).jpeg" alt="">
-        <img src="../../resources/images/accueil/insta grid/image-asset (4).jpeg" alt="">
-        <img src="../../resources/images/accueil/insta grid/image-asset (5).jpeg" alt="">
-        <img src="../../resources/images/accueil/insta grid/image-asset (6).jpeg" alt="">
-        <img src="../../resources/images/accueil/insta grid/image-asset (7).jpeg" alt="">
-        <img src="../../resources/images/accueil/insta grid/image-asset.jpeg" alt="">
-        <img src="../../resources/images/accueil/insta grid/IMG_1614_jpg.jpg" alt="">
-        <img src="../../resources/images/accueil/insta grid/IMG_2679_jpg.jpg" alt="">
-        <img src="../../resources/images/accueil/insta grid/IMG_2800_jpg.jpg" alt="">
-        <img src="../../resources/images/accueil/insta grid/IMG_4834.jpg" alt="">
-        <img src="../../resources/images/accueil/insta grid/phone+grips.jpg" alt="">
-        <img src="../../resources/images/accueil/insta grid/sp+-+2.jpg" alt="">
-        <img src="../../resources/images/accueil/insta grid/sp.jpg" alt="">
-        <img src="../../resources/images/accueil/insta grid/ss11+2.jpg" alt="">
-        <img src="../../resources/images/accueil/insta grid/image-asset (2).jpeg" alt="">
-        <img src="../../resources/images/accueil/insta grid/IMG_2800_jpg.jpg" alt="">
+        <img src="../../resources/images/accueil/instagrid/dc10-0.jpg" alt="">
+        <img src="../../resources/images/accueil/instagrid/dcs-0.jpg" alt="">
+        <img src="../../resources/images/accueil/instagrid/image-asset(1).jpeg" alt="">
+        <img src="../../resources/images/accueil/instagrid/image-asset(2).jpeg" alt="">
+        <img src="../../resources/images/accueil/instagrid/image-asset(3).jpeg" alt="">
+        <img src="../../resources/images/accueil/instagrid/image-asset(4).jpeg" alt="">
+        <img src="../../resources/images/accueil/instagrid/image-asset(5).jpeg" alt="">
+        <img src="../../resources/images/accueil/instagrid/image-asset(6).jpeg" alt="">
+        <img src="../../resources/images/accueil/instagrid/image-asset(7).jpeg" alt="">
+        <img src="../../resources/images/accueil/instagrid/image-asset.jpeg" alt="">
+        <img src="../../resources/images/accueil/instagrid/IMG_1614_jpg.jpg" alt="">
+        <img src="../../resources/images/accueil/instagrid/IMG_2679_jpg.jpg" alt="">
+        <img src="../../resources/images/accueil/instagrid/IMG_2800_jpg.jpg" alt="">
+        <img src="../../resources/images/accueil/instagrid/IMG_4834.jpg" alt="">
+        <img src="../../resources/images/accueil/instagrid/phone+grips.jpg" alt="">
+        <img src="../../resources/images/accueil/instagrid/sp+-+2.jpg" alt=""> 
+        <img src="../../resources/images/accueil/instagrid/sp.jpg" alt="">
+        <img src="../../resources/images/accueil/instagrid/ss11+2.jpg" alt="">
+        <img src="../../resources/images/accueil/instagrid/image-asset(2).jpeg" alt="">
+        <img src="../../resources/images/accueil/instagrid/IMG_2800_jpg.jpg" alt="">
     </div>
 
     <footer>
