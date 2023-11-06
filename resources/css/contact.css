@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: #FBC0AE;
+    font-family:'Gloock', sans-serif;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 90px;
+    color: #FEECB1;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+}
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW NAV BAR  WWWWWWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    color:  rgba(255, 255, 255);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    font-size: 15px;
+}
+
+.close-button {
+    font-size: 10px;
+    color:  rgba(255, 255, 255);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#header-left-part, #header-right-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+#header-left-part nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: white;
+}
+
+#header-left-part nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#header-left-part img{
+    height: 60px;
+    width: 60px;
+}
+
+#header-right-part img{
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+}
+
+#header-right-part p{
+    color: white;
+}
+
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW MAIN CONTENT WWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+main {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+
+h1{
+    font-size: 30px;
+    color: white;
+}
+
+p{
+    color: white;
+}
+.shop-button{
+    color: white;
+    border: solid 1px white;
+    text-decoration: none;
+    padding: 20px 30px;
+    width: fit-content;
+}
+
+.shop-button:hover{
+    background-color: rgba(255, 238, 223, 0.712);
+}
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW FOOTER WWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin: 200px 0px 80px 70px;
+    width: 100%;
+    color: white;
+}
+
+footer h3{
+    font-size: 30px;
+}
+
+footer ul{
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+}
+
+footer ul li{
+    margin: 20px 0px;
+}
+
+footer ul li a{
+    text-decoration: underline;
+    color: white;
+}

@@ -210,6 +210,26 @@ header{
     text-transform: uppercase;
     color: rgb(255, 57, 57, 0.6);
 }
+
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW PROD GENRE WWWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+h1#product-genre{
+    font-size: 50px;
+    margin: 0;
+}
+
+h2#product-genre{
+    font-size: 20px;
+    margin: 0;
+}
+
+h2#product-genre a{
+    color: rgb(255, 255, 255, 0.6);
+    text-decoration: none;
+}
 /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
 /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW FOOTER WWWWWWWWWWWWWWWWWWWWWWWWWWW*/
 /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
@@ -217,7 +237,7 @@ header{
 footer{
     display: flex;
     flex-direction: column;
-    margin: 200px 0px 100px 200px;
+    margin: 200px 0px 80px 70px;
     width: 100%;
     color: white;
 }
